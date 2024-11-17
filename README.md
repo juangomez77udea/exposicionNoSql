@@ -15,9 +15,12 @@ pasos:
 
 1.  Crear base de datos:
    
-   `use laLiga`
+    `use laLiga`
 
-2.  Se Crean las colecciones de la base de datos:
+    ![image](https://github.com/user-attachments/assets/50c1573e-7caf-46a4-965f-3ad81bc31734)
+
+
+3.  Se Crean las colecciones de la base de datos:
 
     `db.createCollection(“posiciones”)`
     
@@ -25,7 +28,11 @@ pasos:
     
     `db.createCollection(“local”)`
 
-4.  Se insertan los datos para cada coleccion:
+     ![image](https://github.com/user-attachments/assets/13889c11-7f36-47ff-ab17-1a8f54d3f890)
+
+
+
+5.  Se insertan los datos para cada coleccion:
 
       `db.posiciones.insertMany()`
 
@@ -50,13 +57,33 @@ pasos:
 
     https://gist.github.com/juangomez77udea/71f3cf97cf0a5a4d9895da99f1ffedd7
 
+    
+
+  ![image](https://github.com/user-attachments/assets/b7802d3b-6d3e-4b9b-956a-7c6000d5f9b8)
+
+  Luego de insertar los elementos del Gist en cada colección, se obtiene un resultado similar a este:
+
+![image](https://github.com/user-attachments/assets/853e75ff-ba2c-4cae-9d94-7d556fe0a72d)
+
+
+
 5. Se puede revisar con el siguiente comando que los colecciones tengan la cantidad de equipos correcta, que en este caso son 20:
 
    `db.posiciones.countDocuments()`
+   
 
-6. Una manera de visualizar los datos de cada colección es con el siguiente comando:
+  ![image](https://github.com/user-attachments/assets/ed3a74bc-9790-4a81-8da0-8e86344bd443)
+
+
+
+7. Una manera de visualizar los datos de cada colección es con el siguiente comando:
 
    `db.posiciones.find().pretty`
+
+
+   ![image](https://github.com/user-attachments/assets/f3931784-17df-4afe-959c-0285e0003442)
+
+   
 
 **Algunos Querys:**
 
