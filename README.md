@@ -40,22 +40,22 @@ pasos:
 
       `bd.visita.insertMany()`
 
-    Dentro de los parentesis se debe colocar los valores correspondientes a cada Gists:
+Dentro de los parentesis se debe colocar los valores correspondientes a cada Gists:
     
 
-   Posiciones:
-
-    https://gist.github.com/juangomez77udea/91a0a7f97135f5a064f0ca8251a3a755
-
-   
-
-   Casa:
-
-    https://gist.github.com/juangomez77udea/341aef9d2fc7ac9c26e392a1b36a8409
-
-  Visita:
-
-    https://gist.github.com/juangomez77udea/71f3cf97cf0a5a4d9895da99f1ffedd7
+   **Posiciones:**
+        
+  https://gist.github.com/juangomez77udea/91a0a7f97135f5a064f0ca8251a3a755
+        
+           
+  **Casa:**
+        
+  https://gist.github.com/juangomez77udea/341aef9d2fc7ac9c26e392a1b36a8409
+          
+        
+  **Visita:**
+        
+  https://gist.github.com/juangomez77udea/71f3cf97cf0a5a4d9895da99f1ffedd7
 
     
 
