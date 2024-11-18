@@ -79,7 +79,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
 
 5. Una manera de visualizar los datos de cada colección es con el siguiente comando:
 
-   `db.posiciones.find().pretty`
+   `db.posiciones.find().pretty()`
 
 
    ![image](https://github.com/user-attachments/assets/f3931784-17df-4afe-959c-0285e0003442)
