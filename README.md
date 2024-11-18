@@ -97,14 +97,14 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 }).sort({ "pts": 1 })`
 
-    |![image](https://github.com/user-attachments/assets/f1326955-f222-4dfe-86e6-4975da24e1af)|![image](https://github.com/user-attachments/assets/cae21994-9631-44dd-a41f-cabb1ec0ac63)|![image](https://github.com/user-attachments/assets/d822cf02-f1c5-40b2-80bb-5f18ece2a092)|
+    ![image](https://github.com/user-attachments/assets/f1326955-f222-4dfe-86e6-4975da24e1af) ![image](https://github.com/user-attachments/assets/cae21994-9631-44dd-a41f-cabb1ec0ac63) ![image](https://github.com/user-attachments/assets/d822cf02-f1c5-40b2-80bb-5f18ece2a092)
 
 
 11. Ordenar los equipos por puntaje de mayor a menor:
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 }).sort({ "pts": -1 })`
 
-    |![image](https://github.com/user-attachments/assets/e0c2f453-ee0d-46f2-8484-e505757400f2)|![image](https://github.com/user-attachments/assets/9da5f4d9-85d9-4b15-932b-80ae0750b252)|![image](https://github.com/user-attachments/assets/c299eb6e-0216-483b-b720-ecfa5484d3e8)|
+    ![image](https://github.com/user-attachments/assets/e0c2f453-ee0d-46f2-8484-e505757400f2) ![image](https://github.com/user-attachments/assets/9da5f4d9-85d9-4b15-932b-80ae0750b252) ![image](https://github.com/user-attachments/assets/c299eb6e-0216-483b-b720-ecfa5484d3e8)
 
 
 
