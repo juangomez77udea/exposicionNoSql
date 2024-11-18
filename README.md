@@ -121,7 +121,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
 10. Los tres últimos equipos en la tabla van directamente al descenso, encontrar los equipos que descienden:
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 })
-    	.sort({ "pts": 1 }).limit(3)
+    	.sort({ "pts": 1 }).limit(3)`
 
     ![image](https://github.com/user-attachments/assets/d474f8dc-965b-44d1-a11d-34c9c56457a9)
 
