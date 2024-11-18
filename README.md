@@ -26,7 +26,7 @@ pasos:
     
     `db.createCollection(“visita”)`
     
-    `db.createCollection(“local”)`
+    `db.createCollection(“casa”)`
 
      ![image](https://github.com/user-attachments/assets/13889c11-7f36-47ff-ab17-1a8f54d3f890)
 
@@ -60,8 +60,10 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
     
 
   ![image](https://github.com/user-attachments/assets/b7802d3b-6d3e-4b9b-956a-7c6000d5f9b8)
+  
 
   Luego de insertar los elementos del Gist en cada colección, se obtiene un resultado similar a este:
+  
 
   ![image](https://github.com/user-attachments/assets/853e75ff-ba2c-4cae-9d94-7d556fe0a72d)
 
