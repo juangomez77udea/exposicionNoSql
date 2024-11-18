@@ -20,7 +20,7 @@ pasos:
     ![image](https://github.com/user-attachments/assets/50c1573e-7caf-46a4-965f-3ad81bc31734)
 
 
-3.  Se Crean las colecciones de la base de datos:
+2.  Se Crean las colecciones de la base de datos:
 
     `db.createCollection(“posiciones”)`
     
@@ -32,7 +32,7 @@ pasos:
 
 
 
-5.  Se insertan los datos para cada coleccion:
+3.  Se insertan los datos para cada coleccion:
 
       `db.posiciones.insertMany()`
 
@@ -66,7 +66,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
   ![image](https://github.com/user-attachments/assets/853e75ff-ba2c-4cae-9d94-7d556fe0a72d)
 
 
-5. Se puede revisar con el siguiente comando que los colecciones tengan la cantidad de equipos correcta, que en este caso son 20:
+4. Se puede revisar con el siguiente comando que los colecciones tengan la cantidad de equipos correcta, que en este caso son 20:
 
    `db.posiciones.countDocuments()`
    
@@ -75,7 +75,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
 
 
 
-7. Una manera de visualizar los datos de cada colección es con el siguiente comando:
+5. Una manera de visualizar los datos de cada colección es con el siguiente comando:
 
    `db.posiciones.find().pretty`
 
@@ -86,21 +86,21 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
 
 **Algunos Querys:**
 
-7. Muestrar todos los objetos excluyende de estos el id:
+6. Muestrar todos los objetos excluyende de estos el id:
 
     `db.posiciones.find({},{"_id":0})`
 
    ![image](https://github.com/user-attachments/assets/e324a7e2-6e83-4ffd-812d-05ea199589a5)
 
   
-9. Ordenar los equipos por puntaje de menor a mayor:
+7. Ordenar los equipos por puntaje de menor a mayor:
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 }).sort({ "pts": 1 })`
 
     ![image](https://github.com/user-attachments/assets/f1326955-f222-4dfe-86e6-4975da24e1af) ![image](https://github.com/user-attachments/assets/cae21994-9631-44dd-a41f-cabb1ec0ac63) ![image](https://github.com/user-attachments/assets/d822cf02-f1c5-40b2-80bb-5f18ece2a092)
 
 
-11. Ordenar los equipos por puntaje de mayor a menor:
+8. Ordenar los equipos por puntaje de mayor a menor:
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 }).sort({ "pts": -1 })`
     
@@ -109,7 +109,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
 
 
 
-13. Teniendo en cuenta que los 4 equipos con mayor puntaje, van a champions League, encuentrar cuales son estos equipos en orden de puntos de mayor a menor:
+9. Teniendo en cuenta que los 4 equipos con mayor puntaje, van a champions League, encuentrar cuales son estos equipos en orden de puntos de mayor a menor:
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 })
                 .sort({ "pts": -1 })
@@ -118,7 +118,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
     ![image](https://github.com/user-attachments/assets/bdd93b5b-6c13-4bb5-876b-f68c1d750fac)
 
 
-15. Los tres últimos equipos en la tabla van directamente al descenso, encontrar los equipos que descienden:
+10. Los tres últimos equipos en la tabla van directamente al descenso, encontrar los equipos que descienden:
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 })
     	.sort({ "pts": 1 }).limit(3)
@@ -127,7 +127,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
 
 
 
-17. ¿Cuál es el equipo con menos goles en contra?:
+11. ¿Cuál es el equipo con menos goles en contra?:
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "gc": 1 })
     		.sort({ "gc": 1 })
@@ -137,7 +137,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
 
 
     
-19. ¿Cuál es el equipo con mayor cantidad de goles anotados?:
+12. ¿Cuál es el equipo con mayor cantidad de goles anotados?:
 
     `db.posiciones.find({}, { "_id": 0, "nombre": 1, "gf": 1 })
     .sort({ "gf": -1 })
@@ -146,7 +146,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
     ![image](https://github.com/user-attachments/assets/011d842f-44ae-4ed8-b107-a1d69c77672b)
 
 
-20. ¿De los 4 equipos que pasaron a champions, cual recibió más goles en contra como local?
+13. ¿De los 4 equipos que pasaron a champions, cual recibió más goles en contra como local?
 
     `const topEquipos = db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 })
       .sort({ "pts": -1 })
@@ -163,7 +163,7 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
       ![image](https://github.com/user-attachments/assets/36e772a9-685d-4d00-ab7f-18622c2d9119)
 
 
-22. De los 3 equipos que descienden, ¿Cuál es el equipo más goleador como visitante?
+14. De los 3 equipos que descienden, ¿Cuál es el equipo más goleador como visitante?
     
     `const topTeams = db.posiciones.find({}, { "_id": 0, "nombre": 1, "pts": 1 })
     	.sort({ "pts": 1 })
