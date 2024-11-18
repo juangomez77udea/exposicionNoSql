@@ -22,11 +22,11 @@ pasos:
 
 2.  Se Crean las colecciones de la base de datos:
 
-    `db.createCollection(“posiciones”)`
+    `db.createCollection('posiciones')`
     
-    `db.createCollection(“visita”)`
+    `db.createCollection('visita')`
     
-    `db.createCollection(“casa”)`
+    `db.createCollection('casa')`
 
      ![image](https://github.com/user-attachments/assets/13889c11-7f36-47ff-ab17-1a8f54d3f890)
 
