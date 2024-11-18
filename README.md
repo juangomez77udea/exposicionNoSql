@@ -173,7 +173,9 @@ Dentro de los parentesis se debe colocar los valores correspondientes a cada Gis
     { "nombre": { $in: topTeams.map(team => team.nombre) } },
     { "_id": 0, "nombre": 1, "gf": 1 }
     ).sort({ "gf": -1 }).limit(1);
-      topAwayGoalsTeam;`
+
+    topAwayGoalsTeam;`
+    
 
     ![image](https://github.com/user-attachments/assets/11b1e637-1ddd-4041-ae9c-adc5103eac1c)
 
