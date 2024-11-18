@@ -38,7 +38,7 @@ pasos:
 
       `db.casa.insertMany()`
 
-      `bd.visita.insertMany()`
+      `db.visita.insertMany()`
 
 Dentro de los parentesis se debe colocar los valores correspondientes a cada Gists:
     
